@@ -1,0 +1,22 @@
+.header {
+  padding: 5.5rem 0;
+  &__container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    img {
+      margin-right: 5rem;
+    }
+    .toggle-btn {
+      background: transparent;
+      display: none;
+      @include responsive(m-tablet) {
+        display: block;
+        margin-left: auto;
+      }
+      &__image {
+        margin-right: 0;
+      }
+    }
+  }
+}
